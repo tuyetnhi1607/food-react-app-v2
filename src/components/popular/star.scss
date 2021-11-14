@@ -1,0 +1,35 @@
+.star-rating{
+    text-align: center;
+    position: relative;
+    font-size: 1rem;
+    button {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 160%;
+        color: rgb(233, 212, 24);
+    }
+    .on {
+        i{
+            &::before{
+                content: "\ebac"
+            }
+        }
+    }
+    .off {
+        i{
+            &::before{
+                content: "\ee8a"
+            }
+        }
+    }
+}
+
+.star-text{
+    color:rgb(122, 122, 122);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+

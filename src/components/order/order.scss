@@ -1,0 +1,29 @@
+.order{
+    margin: 2rem 9%;
+    text-align: center;
+    & > span{
+        font-family: 'Satisfy', cursive;
+        color: rgb(65, 180, 50);
+        font-size: 3rem;
+    }
+    & > h3{
+        font-size: 2rem;
+        margin: .5rem 0;
+        color:rgb(6, 7, 80);
+    }
+    &-card{
+        display: grid;
+        margin-top: 1rem; 
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1rem;
+        &-item{
+            background-color: rgb(235, 230, 230);
+            & > h1{
+                font-size: 1.2rem;
+            }
+            & > img{
+                height: 6rem;
+            }
+        }
+    }
+}

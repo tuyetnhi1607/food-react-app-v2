@@ -1,0 +1,109 @@
+.footer{
+    
+    &-extra{
+        text-align: center;
+        & > p{
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        &-email{
+            display: flex;
+            justify-content: center;
+            & > input{
+                border: none;
+                outline: none;
+                height: 3rem;
+                color: rgb(95, 95, 95);
+                background-color: rgb(224, 224, 224); 
+                width: 50%;
+                border-radius: .5rem 0 0 .5rem;
+                padding-left: 2rem;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+            & > button{
+                border: none;
+                background-color: rgb(65, 180, 50);
+                color: #fff;
+                padding: 0 1rem;
+                height: 3rem;
+                border-radius: 0 .5rem .5rem 0;
+                font-weight: 400;
+                cursor: pointer;
+                font-size: 1rem;
+                display: inline-block;
+                &:hover{
+                    background-color: rgb(6, 7, 80);
+                }
+            }
+        }
+    }
+    
+    &-content{
+        display: grid;
+        margin: 2rem 9%;
+        grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+        place-content: left;
+        &-card{
+            & > p{
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin: 1rem 0 ;
+            }
+            &-item{
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin-bottom: 1rem;
+                & > i{
+                    color:rgb(65, 180, 50);
+                    font-size: 1.5rem;
+                    margin-right: .5rem;
+                }
+                & > p {
+                    color: rgb(71, 71, 71);
+                    &:hover{
+                        transform: translateX(20%);
+                        color:rgb(65, 180, 50);
+                        cursor: pointer;
+                    }
+                }
+
+            }
+        }
+        &-opening{
+            & > p{
+                font-size: 1.2rem;
+                font-weight: 500;
+                margin: 1rem 0 ;
+            }
+            &-item{
+                
+                & > p{
+                    margin-bottom: 1rem;
+                    color: rgb(71, 71, 71);
+                }
+            }
+            
+        }
+        
+    }
+    &-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        gap: 1.5rem;
+        & > i{
+            font-size: 3rem;
+            color:rgb(65, 180, 50);
+            &:hover{
+                color:rgb(6, 7, 80);
+            }
+        }
+    }
+    & > span{
+        color: rgb(148, 148, 148);
+    }
+}

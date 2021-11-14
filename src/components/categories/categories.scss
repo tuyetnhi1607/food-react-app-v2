@@ -1,0 +1,28 @@
+.categories{
+    display: grid;
+    padding: 3rem 9%;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    &-item{
+        cursor: pointer;
+        border-radius: .5rem;
+        text-align: center;
+        background-color: rgba(196, 195, 195, 0.342);
+        padding: 1rem;
+        img{
+            height: 6rem;
+        }
+        h3{
+            text-align: center;
+        }
+        &:hover{
+            background-color: rgb(65, 180, 50);
+            & > h3{
+                color: #fff;
+            }
+            & > img{
+                transform: scale(1.2);
+            }
+        }
+    }
+}

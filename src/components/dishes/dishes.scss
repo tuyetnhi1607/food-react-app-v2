@@ -1,0 +1,53 @@
+.dishes{
+    margin: 2rem 9%;
+    text-align: center;
+    & > span{
+        font-family: 'Satisfy', cursive;
+        color: rgb(65, 180, 50);
+        font-size: 3rem;
+    }
+    & > h3{
+        font-size: 2rem;
+        margin: .5rem 0;
+        color:rgb(6, 7, 80);
+    }
+    &-menu{
+        display: grid;
+        margin-top: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        gap: 1rem;
+        width: 100%;
+        &-item{
+            padding: 0.5rem;
+            background-color: rgb(233, 233, 233);
+            display: flex;
+            border-radius: .5rem;
+            align-items: center;
+            & > img{
+                object-fit: contain;
+                height: 7rem;
+            }
+            &-content{
+                text-align:left;
+                margin: 1rem;
+                & > h4{
+                    font-size: 1.2rem;
+                    color: black;
+                }
+                & > h5{
+                    font-size: 1.2rem;
+                    color: rgb(65, 180, 50);
+                    font-weight: 400;
+                }
+            }
+            &:hover{
+                background-color: rgb(6, 7, 80);
+                &-content{
+                    & > h4{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}

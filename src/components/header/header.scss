@@ -1,0 +1,64 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 101vw;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 .3rem 1rem rgba(228, 228, 228, 0.822);
+    justify-content: space-between;
+    z-index: 1000;
+    &-logo{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        img{
+            height: 2.5rem;
+        }
+        &-name{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+    }
+
+    &-nav{
+        display: flex;
+        gap: 1.5rem;
+        color: rgb(110, 110, 110);
+        a{
+            cursor: pointer;
+            &:hover{
+                color:rgb(65, 180, 50);
+            }
+        }
+    }
+
+    &-icons{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        &-container{
+            background-color: rgb(231, 231, 231);
+            height: 2.5rem;
+            width: 2.5rem;
+            cursor: pointer;
+            border-radius: .5rem;
+            display: grid;
+            place-content: center;
+            i{
+                font-size: 1.5rem;
+            }
+            &:hover{
+                background-color: rgb(65, 180, 50);
+                i{
+                    color:rgb(255, 255, 255);
+                }
+            }
+        }
+        .humburger{
+            display: none;
+        }
+    }
+}
