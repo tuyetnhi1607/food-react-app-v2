@@ -73,7 +73,7 @@ function Footer() {
         <i class="bx bxl-twitter"></i>
         <i class="bx bxl-github"></i>
       </div>
-      <span>Created tuyetnhi1607 | All Rights Reserved!</span>
+      <span>Created tuyetnhi1607</span>
     </div>
   );
 }
