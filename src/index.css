@@ -18,8 +18,8 @@
 html{
   font-size: 100%;
    overflow-x: hidden;
-  /* scroll-behavior: smooth;
-  scroll-padding-top: 8.5rem; */
+  scroll-behavior: smooth;
+  /* scroll-padding-top: 8.5rem; */
 }
 
 html::-webkit-scrollbar{

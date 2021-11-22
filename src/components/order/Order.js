@@ -7,7 +7,7 @@ import img3 from '../assets/icon-3.png'
 
 function Order() {
   return (
-    <div className="order">
+    <div className="order" id="order">
       <span>our menu</span>
       <h3>out top dishes</h3>
       <div className="order-card">

@@ -37,7 +37,7 @@ const data = [
 ]
 function Categories() {
   return (
-    <div className="categories">
+    <div className="categories" id="menu">
       {data.map((item, i) => (
         <div className="categories-item">
           <img src={item.img} alt="" />

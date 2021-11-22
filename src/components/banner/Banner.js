@@ -17,7 +17,7 @@ function Banner() {
       };
   },[]);
   return (
-    <div className="banner">
+    <div className="banner" id="home">
       <div className="banner-content">
         <span >Welcome Foodies</span>
         <h3 >
