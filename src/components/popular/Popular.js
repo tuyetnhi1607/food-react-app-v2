@@ -78,26 +78,29 @@ const data = [
     count: 1,
   },
 ];
-
+function initStorage() {
+  localStorage.click = 0;
+  localStorage.newItem = null;
+  localStorage.itemsArray = null;
+}
 function addCart(e) {
-  localStorage.click = Number(localStorage.click) + 1 || 1;
-  var oldItems = JSON.parse(localStorage.getItem("itemsArray")) || [];
-  var index = e.target.value || 0;
-  console.log("old", oldItems);
+  localStorage.click = Number(localStorage.click) + 1;
+  var oldItems = JSON.parse(localStorage.itemsArray)||[];
+  var index = e.target.value;
   function check(value) {
     if (value) {
       return value.id === data[index].id;
     }
     return false;
   }
-  console.log("true", oldItems.find(check));
+  
   if (oldItems.find(check)) {
     oldItems.find(check).count += 1;
   } else {
     oldItems.push(data[index]);
   }
-  
-  localStorage.newItem = JSON.stringify(data[index]);
+
+  localStorage.setItem("newItem", JSON.stringify(data[index]));
   localStorage.setItem("itemsArray", JSON.stringify(oldItems));
 
   document.getElementById("badge").innerHTML = localStorage.click;
@@ -108,7 +111,12 @@ function addCart(e) {
 }
 
 function Popular() {
+  
   useEffect(() => {
+    if(localStorage.click === undefined){
+      initStorage()
+    }
+    // console.log("itemarr", localStorage.itemsArray)
     document.getElementById("badge").innerHTML = localStorage.click;
   }, []);
   return (
