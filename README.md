@@ -3,7 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 ## token: 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
 ## Available Scripts
-## git push https://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@github.com/tuyetnhi1607/food-react-app-v2.git
+## git push https://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@github.com/tuyetnhi1607/food-react-app-v2.git
 
 ## URL: https://blooming-woodland-27991.herokuapp.com/ | https://git.heroku.com/blooming-woodland-27991.git
 
