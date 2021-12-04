@@ -32,6 +32,9 @@
                     color:rgb(65, 180, 50)
                 }
             }
+            &>h3{
+                color: rgb(6, 7, 80);
+            }
             & > img{
                 height: 10rem;
                 margin-top: -2rem;
@@ -41,6 +44,7 @@
                 justify-content: center;
                 align-items: center;
                 gap: .5rem;
+                color: rgb(6, 7, 80);
                 & > h4{
                     text-decoration: line-through;
                     font-weight: 400;
