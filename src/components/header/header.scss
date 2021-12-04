@@ -29,8 +29,11 @@
         display: flex;
         font-size: 1.4rem;
         gap: 3.5rem;
-        color: rgb(6, 7, 80);
+        
         a{
+            &:visited{
+                color: rgb(6, 7, 80);
+            } 
             cursor: pointer;
             &:hover{
                 color:rgb(65, 180, 50);
